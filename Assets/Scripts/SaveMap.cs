@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Backup : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    List<Position> positions = new List<Position>();
+
+    void SaveIntoJson()
     {
-        
+        foreach (Position pos in positions)
+        {
+            string poss = JsonUtility.ToJson(pos);
+            System.IO.File.WriteAllText(Application.persistentDataPath + "/MapSave.json", poss);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
 }
