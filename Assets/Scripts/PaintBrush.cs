@@ -7,6 +7,14 @@ public class PaintBrush : Tool {
     [SerializeField] private GameObject objectToPaint;
     [SerializeField] private RoadPiece[] roadPieces;
     private Dictionary<Vector3Int, GameObject> grid = new Dictionary<Vector3Int, GameObject>();
+    private Dictionary<string, GameObject> roadPiecesDico = new Dictionary<string, GameObject>();
+    List<Vector3Int> checkedPieces;
+
+    private void Start() {
+        foreach(RoadPiece roadPiece in roadPieces) {
+            roadPiecesDico.Add(roadPiece.Connections.ToString(), roadPiece.gameObject);
+        }
+    }
 
     private void Update() {
         Vector3Int gridPosition = GetGridMousePosition();
@@ -28,10 +36,36 @@ public class PaintBrush : Tool {
     }
 
     private void Paint(Vector3Int gridPosition) {
-
-        GameObject go = Instantiate(objectToPaint, gridPosition, Quaternion.identity);
+        checkedPieces = new List<Vector3Int>();
+        Connections neighbours = CheckNeighbours(gridPosition);
+        GameObject go = GetRoadPiece(neighbours);
+        go = Instantiate(go, gridPosition, Quaternion.identity);
         grid.Add(gridPosition, go);
-        CheckNeighbours(gridPosition);
+        checkedPieces.Add(gridPosition);
+        UpdateNeighbours(gridPosition);
+    }
+
+    private void UpdateNeighbours(Vector3Int position) {
+        Vector3Int[] neighbours = new Vector3Int[] {
+            new Vector3Int(1,0,0),
+            new Vector3Int(-1,0,0),
+            new Vector3Int(0,0,1),
+            new Vector3Int(0,0,-1)
+        };
+        foreach(Vector3Int neighbour in neighbours) {
+            Vector3Int nPos = neighbour + position;
+            if(!grid.ContainsKey(nPos)) continue;
+
+            if(checkedPieces.Contains(nPos)) continue;
+
+            GameObject.Destroy(grid[nPos]);
+            Connections n = CheckNeighbours(nPos);
+            GameObject go = GetRoadPiece(n);
+            go = Instantiate(go, nPos, Quaternion.identity);
+            grid[nPos] = go;
+            checkedPieces.Add(nPos);
+            UpdateNeighbours(nPos);
+        }
     }
 
     private Vector3Int GetGridMousePosition() {
@@ -46,25 +80,31 @@ public class PaintBrush : Tool {
         return Vector3Int.zero;
     }
 
-    private void CheckNeighbours(Vector3Int gridPosition) {
+    private Connections CheckNeighbours(Vector3Int gridPosition) {
         Vector3Int[] neighbours = new Vector3Int[] {
             new Vector3Int(1,0,0),
             new Vector3Int(-1,0,0),
             new Vector3Int(0,0,1),
             new Vector3Int(0,0,-1)
         };
-        List<Vector3Int> currentNeighbours = new List<Vector3Int>();
+        Connections currentNeighbours = new Connections(neighbours.Length);
         for(int i = 0; i < neighbours.Length; i++) {
             if(grid.TryGetValue(gridPosition + neighbours[i], out GameObject go)) {
                 Debug.Log(go.name + " is a neighbour", go);
-                currentNeighbours.Add(gridPosition + neighbours[i]);
+                currentNeighbours.connections[i] = true;
+            } else {
+                currentNeighbours.connections[i] = false;
             }
         }
+        return currentNeighbours;
+    }
 
-        if(currentNeighbours.Count == 0) return;
-
-        foreach(var neighbour in currentNeighbours) {
-
+    private GameObject GetRoadPiece(Connections currentNeighbours) {
+        if(roadPiecesDico.TryGetValue(currentNeighbours.ToString(), out GameObject gameObject)) {
+            Debug.Log(gameObject.name, gameObject);
+            return gameObject;
         }
+        Debug.Log($"Key not found {currentNeighbours}");
+        return roadPieces[0].gameObject;
     }
 }
