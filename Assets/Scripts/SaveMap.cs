@@ -6,66 +6,48 @@ using UnityEngine;
 
 public class SaveMap : MonoBehaviour
 {
-    List<Vector2Int> positions = new List<Vector2Int>();
-    string filePath = "Assets/Ressources/MapSaving.txt";
-    public GameObject prefab;
-
-    private void Start()
-    {
-        filePath = "Assets/Ressources/MapSaving.txt";
-
-        positions.Add(new Vector2Int(1,2));
-        positions.Add(new Vector2Int(1,1));
-        positions.Add(new Vector2Int(2,2));
-        positions.Add(new Vector2Int(2,1));
-        positions.Add(new Vector2Int(0,1));
-        positions.Add(new Vector2Int(1,0));
-        
-
-        SaveIntoTxt();
-
-        LoadTxt();
-    }
+    private List<Vector3Int> _positions;
+    private string _filePath = "Assets/Ressources/MapSaving.txt";
+    public PaintBrush _paintBrush;
 
     [ContextMenu("Save")]
-    void SaveIntoTxt()
+    public void SaveIntoTxt()
     {
-        StreamWriter writer = new StreamWriter(filePath, false);
+        _positions = _paintBrush.GetMap();
 
-        foreach (var item in positions)
+        StreamWriter writer = new StreamWriter(_filePath, false);
+
+        foreach (var item in _positions)
         {
-            writer.WriteLine(item.x + "," + item.y);
+            writer.WriteLine(item.x + "," + item.y + "," + item.z);
         }
 
         writer.Close();
 
-        Debug.Log("coucou");
+        Debug.Log("saved");
 
-        AssetDatabase.ImportAsset(filePath);
-
-        LoadTxt();
+        AssetDatabase.ImportAsset(_filePath);
     }
 
 
     [ContextMenu("Load")]
-    void LoadTxt()
+    public void LoadTxt()
     {
-        StreamReader reader = new StreamReader(filePath);
+        _paintBrush.CleanMap();
+
+        StreamReader reader = new StreamReader(_filePath);
         string line = reader.ReadLine();
-        positions = new List<Vector2Int>();
+        _positions = new List<Vector3Int>();
         while (line != null && line.Length > 2)
         {
             string[] split = line.Split(',');
-            positions.Add(new Vector2Int(int.Parse(split[0]), int.Parse(split[1])));
+            _positions.Add(new Vector3Int(int.Parse(split[0]), int.Parse(split[1]), int.Parse(split[2])));
             line = reader.ReadLine();
         }
 
-        foreach (var item in positions)
+        foreach (var item in _positions)
         {
-            GameObject go = Instantiate(prefab);
-            go.transform.position = new Vector3(item.x, 0, item.y);
+            _paintBrush.Paint(item);
         }
-        
-
     }
 }

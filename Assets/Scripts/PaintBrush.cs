@@ -8,8 +8,19 @@ public class PaintBrush : Tool {
     [SerializeField] private GameObject objectToPaint;
     [SerializeField] private RoadPiece[] roadPieces;
     private Dictionary<Vector3Int, GameObject> grid = new Dictionary<Vector3Int, GameObject>();
+    public List<Vector3Int> _map = new List<Vector3Int>();
     private Dictionary<string, GameObject> roadPiecesDico = new Dictionary<string, GameObject>();
     List<Vector3Int> checkedPieces;
+
+    public List<Vector3Int> GetMap()
+    {
+        List<Vector3Int> map = new List<Vector3Int>();
+        foreach (var item in grid)
+        {
+            map.Add(item.Key);
+        }
+        return map;
+    }
 
     private void Start() {
         foreach(RoadPiece roadPiece in roadPieces) {
@@ -33,17 +44,29 @@ public class PaintBrush : Tool {
         if(Input.GetKey(KeyCode.Mouse0)) Paint(gridPosition);
     }
 
+    public void CleanMap()
+    {
+        foreach (var item in grid)
+        {
+            GameObject.Destroy(grid[item.Key]);
+        }
+
+        grid.Clear();
+    }
+
     private void Erase(Vector3Int gridPosition) {
         GameObject.Destroy(grid[gridPosition]);
         grid.Remove(gridPosition);
+        //_map.Remove(gridPosition);
     }
 
-    private void Paint(Vector3Int gridPosition) {
+    public void Paint(Vector3Int gridPosition) {
         checkedPieces = new List<Vector3Int>();
         Connections neighbours = CheckNeighbours(gridPosition);
         GameObject go = GetRoadPiece(neighbours);
         go = Instantiate(go, gridPosition, Quaternion.identity);
         grid.Add(gridPosition, go);
+        _map.Add(gridPosition);
         checkedPieces.Add(gridPosition);
         UpdateNeighbours(gridPosition);
     }
