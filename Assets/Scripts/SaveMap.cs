@@ -8,21 +8,23 @@ public class SaveMap : MonoBehaviour
 {
     private List<Vector3Int> _positions;
     private string _filePath = "Assets/Ressources/MapSaving.txt";
-    public PaintBrush _paintBrush;
+    public PaintBrush PaintBrush;
 
     [ContextMenu("Save")]
     public void SaveIntoTxt()
     {
-        _positions = _paintBrush.GetMap();
+        _positions = PaintBrush.GetMap();
 
-        StreamWriter writer = new StreamWriter(_filePath, false);
-
-        foreach (var item in _positions)
+        using (var fileStream = File.Open(_filePath, FileMode.Create))
         {
-            writer.WriteLine(item.x + "," + item.y + "," + item.z);
+            using (StreamWriter writer = new StreamWriter(fileStream))
+            {
+                foreach (var item in _positions)
+                {
+                    writer.WriteLine(item.x + "," + item.y + "," + item.z);
+                }
+            }
         }
-
-        writer.Close();
 
         Debug.Log("saved");
 
@@ -33,7 +35,7 @@ public class SaveMap : MonoBehaviour
     [ContextMenu("Load")]
     public void LoadTxt()
     {
-        _paintBrush.CleanMap();
+        PaintBrush.CleanMap();
 
         StreamReader reader = new StreamReader(_filePath);
         string line = reader.ReadLine();
@@ -47,7 +49,7 @@ public class SaveMap : MonoBehaviour
 
         foreach (var item in _positions)
         {
-            _paintBrush.Paint(item);
+            PaintBrush.Paint(item);
         }
     }
 }
