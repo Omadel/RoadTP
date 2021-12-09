@@ -5,10 +5,12 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private Camera cam;
     private float _screenDistance = 70;
+    private float _zoom;
 
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
+        _zoom = 10;
     }
 
     private void Update()
@@ -31,7 +33,23 @@ public class CameraController : MonoBehaviour
         }
         if(Mathf.Abs(Input.mouseScrollDelta.sqrMagnitude) >= .1f)
         {
+            if (_zoom >= 1 && Input.mouseScrollDelta.y < 0)
+            {
             cam.transform.localPosition += cam.transform.forward * Input.mouseScrollDelta.y;
+                _zoom += Input.mouseScrollDelta.y;
+            } 
+            
+            if (_zoom <= 20 && Input.mouseScrollDelta.y > 0)
+            {
+            cam.transform.localPosition += cam.transform.forward * Input.mouseScrollDelta.y;
+                _zoom += Input.mouseScrollDelta.y;
+            } 
+            
         }
+    }
+
+    public void Recenter()
+    {
+        transform.position = Vector3.zero;
     }
 }
