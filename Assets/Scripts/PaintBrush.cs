@@ -2,26 +2,69 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PaintBrush : Tool {
+    [SerializeField] private GameObject preview;
+    [SerializeField] private Color[] previewColors;
     [SerializeField] private GameObject objectToPaint;
+    [SerializeField] private RoadPiece[] roadPieces;
     private Dictionary<Vector3Int, GameObject> grid = new Dictionary<Vector3Int, GameObject>();
 
     private void Update() {
-        if(Input.GetKey(KeyCode.Mouse0)) {
-            Paint();
+        Vector3Int gridPosition = GetGridMousePosition();
+        preview.transform.position = gridPosition;
+        bool alreadyExists = grid.ContainsKey(gridPosition);
+        if(alreadyExists) {
+            //if(Input.GetKeyDown(KeyCode.Mouse0)) Erase(gridPosition);
+            preview.GetComponent<MeshRenderer>().material.color = previewColors[0];
+            return;
         }
+        preview.GetComponent<MeshRenderer>().material.color = previewColors[1];
+
+        if(Input.GetKey(KeyCode.Mouse0)) Paint(gridPosition);
     }
 
-    private void Paint() {
+    private void Erase(Vector3Int gridPosition) {
+        GameObject.Destroy(grid[gridPosition]);
+        grid.Remove(gridPosition);
+    }
+
+    private void Paint(Vector3Int gridPosition) {
+
+        GameObject go = Instantiate(objectToPaint, gridPosition, Quaternion.identity);
+        grid.Add(gridPosition, go);
+        CheckNeighbours(gridPosition);
+    }
+
+    private Vector3Int GetGridMousePosition() {
         Plane plane = new Plane(Vector3.up, 0);
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if(plane.Raycast(ray, out float distance)) {
             Vector3 worldPosition = ray.GetPoint(distance);
             Vector3Int gridPosition = Vector3Int.RoundToInt(worldPosition);
-            if(grid.ContainsKey(gridPosition)) return;
+            return gridPosition;
+        }
+        return Vector3Int.zero;
+    }
 
-            GameObject go = Instantiate(objectToPaint, gridPosition, Quaternion.identity);
-            grid.Add(gridPosition, go);
+    private void CheckNeighbours(Vector3Int gridPosition) {
+        Vector3Int[] neighbours = new Vector3Int[] {
+            new Vector3Int(1,0,0),
+            new Vector3Int(-1,0,0),
+            new Vector3Int(0,0,1),
+            new Vector3Int(0,0,-1)
+        };
+        List<Vector3Int> currentNeighbours = new List<Vector3Int>();
+        for(int i = 0; i < neighbours.Length; i++) {
+            if(grid.TryGetValue(gridPosition + neighbours[i], out GameObject go)) {
+                Debug.Log(go.name + " is a neighbour", go);
+                currentNeighbours.Add(gridPosition + neighbours[i]);
+            }
+        }
+
+        if(currentNeighbours.Count == 0) return;
+
+        foreach(var neighbour in currentNeighbours) {
+
         }
     }
 }
