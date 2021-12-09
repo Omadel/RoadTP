@@ -35,13 +35,15 @@ public class PaintBrush : Tool {
         preview.transform.position = gridPosition;
         bool alreadyExists = grid.ContainsKey(gridPosition);
         if(alreadyExists) {
-            //if(Input.GetKeyDown(KeyCode.Mouse0)) Erase(gridPosition);
+            if(Input.GetKey(KeyCode.Mouse1)) Erase(gridPosition);
             preview.GetComponent<MeshRenderer>().material.color = previewColors[0];
             return;
         }
         preview.GetComponent<MeshRenderer>().material.color = previewColors[1];
 
         if(Input.GetKey(KeyCode.Mouse0)) Paint(gridPosition);
+
+
     }
 
     public void CleanMap()
@@ -57,7 +59,7 @@ public class PaintBrush : Tool {
     private void Erase(Vector3Int gridPosition) {
         GameObject.Destroy(grid[gridPosition]);
         grid.Remove(gridPosition);
-        //_map.Remove(gridPosition);
+        UpdateNeighbours(gridPosition);
     }
 
     public void Paint(Vector3Int gridPosition) {
