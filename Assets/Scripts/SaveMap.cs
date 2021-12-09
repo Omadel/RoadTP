@@ -22,12 +22,14 @@ public class SaveMap : MonoBehaviour
         
 
         SaveIntoTxt();
+
+        LoadTxt();
     }
 
     [ContextMenu("Save")]
     void SaveIntoTxt()
     {
-        StreamWriter writer = new StreamWriter("Assets/Ressources/MapSaving.txt", true);
+        StreamWriter writer = new StreamWriter(filePath, false);
 
         foreach (var item in positions)
         {
@@ -36,7 +38,25 @@ public class SaveMap : MonoBehaviour
 
         writer.Close();
 
-        AssetDatabase.ImportAsset("Assets/Ressources/MapSaving.txt");
+        Debug.Log("coucou");
+
+        AssetDatabase.ImportAsset(filePath);
+
+        LoadTxt();
+    }
+
+
+    [ContextMenu("Load")]
+    void LoadTxt()
+    {
+        StreamReader reader = new StreamReader(filePath);
+        string line = reader.ReadLine();
+        positions = new List<Vector2Int>();
+        while (line != null && line.Length > 2)
+        {
+            positions.Add(new Vector2Int((int)char.GetNumericValue(line[0]), (int)char.GetNumericValue(line[2])));
+            line = reader.ReadLine();
+        }
     }
 
 
