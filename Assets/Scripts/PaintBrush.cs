@@ -14,6 +14,7 @@ public class PaintBrush : Tool {
         foreach(RoadPiece roadPiece in roadPieces) {
             roadPiecesDico.Add(roadPiece.Connections.ToString(), roadPiece.gameObject);
         }
+        preview = GameObject.Instantiate(preview, transform);
     }
 
     private void Update() {
@@ -64,7 +65,6 @@ public class PaintBrush : Tool {
             go = Instantiate(go, nPos, Quaternion.identity);
             grid[nPos] = go;
             checkedPieces.Add(nPos);
-            UpdateNeighbours(nPos);
         }
     }
 
