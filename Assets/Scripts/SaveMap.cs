@@ -8,6 +8,7 @@ public class SaveMap : MonoBehaviour
 {
     List<Vector2Int> positions = new List<Vector2Int>();
     string filePath = "Assets/Ressources/MapSaving.txt";
+    public GameObject prefab;
 
     private void Start()
     {
@@ -54,10 +55,17 @@ public class SaveMap : MonoBehaviour
         positions = new List<Vector2Int>();
         while (line != null && line.Length > 2)
         {
-            positions.Add(new Vector2Int((int)char.GetNumericValue(line[0]), (int)char.GetNumericValue(line[2])));
+            string[] split = line.Split(',');
+            positions.Add(new Vector2Int(int.Parse(split[0]), int.Parse(split[1])));
             line = reader.ReadLine();
         }
+
+        foreach (var item in positions)
+        {
+            GameObject go = Instantiate(prefab);
+            go.transform.position = new Vector3(item.x, 0, item.y);
+        }
+        
+
     }
-
-
 }
