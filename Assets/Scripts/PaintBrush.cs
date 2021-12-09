@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PaintBrush : Tool {
     [SerializeField] private GameObject preview;
@@ -18,6 +19,7 @@ public class PaintBrush : Tool {
     }
 
     private void Update() {
+        if (EventSystem.current.IsPointerOverGameObject()) return;
         Vector3Int gridPosition = GetGridMousePosition();
         preview.transform.position = gridPosition;
         bool alreadyExists = grid.ContainsKey(gridPosition);
