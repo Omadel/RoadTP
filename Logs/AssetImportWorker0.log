@@ -11,19 +11,19 @@ C:\Program Files\Unity\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/ejavelle/Documents/UnityProjects/RoadTP
+C:/Users/hfourmestraux/Documents/GitHub/RoadTP
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60034
-Successfully changed project path to: C:/Users/ejavelle/Documents/UnityProjects/RoadTP
-C:/Users/ejavelle/Documents/UnityProjects/RoadTP
+64740
+Successfully changed project path to: C:/Users/hfourmestraux/Documents/GitHub/RoadTP
+C:/Users/hfourmestraux/Documents/GitHub/RoadTP
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 57.77 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 28.16 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.13f1 (71691879b7f5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/ejavelle/Documents/UnityProjects/RoadTP/Assets
+[Subsystems] Discovering subsystems at path C:/Users/hfourmestraux/Documents/GitHub/RoadTP/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -35,37 +35,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56792
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56824
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001760 seconds.
+Registered in 0.002322 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 25.60 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 25.29 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.813 seconds
+- Completed reload, in  0.865 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005846 seconds.
+Registered in 0.007567 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.848 seconds
+- Completed reload, in  0.790 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1390 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1394 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 64.7 MB.
 System memory in use after: 64.8 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1823.
-Total: 1.756000 ms (FindLiveObjects: 0.141900 ms CreateObjectMapping: 0.032300 ms MarkObjects: 1.509700 ms  DeleteObjects: 0.071400 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 1828.
+Total: 1.664700 ms (FindLiveObjects: 0.144800 ms CreateObjectMapping: 0.030200 ms MarkObjects: 1.433000 ms  DeleteObjects: 0.055600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -79,8 +79,692 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+  path: Assets/Plugins/RainbowAssets
+  artifactKey: Guid(2d179837d2a8d734fb2f73b344de6e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RainbowAssets using Guid(2d179837d2a8d734fb2f73b344de6e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad53467116c9d23e993b695cd278eece') in 0.005072 seconds 
+  Import took 0.006980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.836212 seconds.
+  path: Assets/Materials/asphalt.mat
+  artifactKey: Guid(9821dfb5d7fcd2843bb60d4d80a92e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/asphalt.mat using Guid(9821dfb5d7fcd2843bb60d4d80a92e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '124cf107e8d5cbd878dc0b410c036539') in 0.077243 seconds 
+  Import took 0.079566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Materials/pavement.mat
+  artifactKey: Guid(bebda5de78eda4e4aad8f0b3a935d787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/pavement.mat using Guid(bebda5de78eda4e4aad8f0b3a935d787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c78d4215a76af9ffa4f6ac3ce8fd62') in 0.010728 seconds 
+  Import took 0.013045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Materials/line.mat
+  artifactKey: Guid(d05e90d22aed76a46a93c9b8f402fd6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/line.mat using Guid(d05e90d22aed76a46a93c9b8f402fd6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf779f820ae686837f3983065f129d6f') in 0.011046 seconds 
+  Import took 0.012824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Materials/asphaltEdge.mat
+  artifactKey: Guid(87427db6d4dbb57429463d48d94c840f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/asphaltEdge.mat using Guid(87427db6d4dbb57429463d48d94c840f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e1a65dcc2e8067ef59bbf916bc97aeb') in 0.009618 seconds 
+  Import took 0.011496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.318655 seconds.
+  path: Assets/Meshes/RoadMeshes/road_bend.fbx
+  artifactKey: Guid(b7cc246732a087d49806e99ce19dd5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_bend.fbx using Guid(b7cc246732a087d49806e99ce19dd5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a5923bade4947a5a1199d8adc3006d') in 0.072119 seconds 
+  Import took 0.074502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Meshes/RoadMeshes/road_crossroad.fbx
+  artifactKey: Guid(2e7b576eff361214081fcc5c1ba9fe63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_crossroad.fbx using Guid(2e7b576eff361214081fcc5c1ba9fe63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c684b0aec7edfa17fa4e3c4874d4d481') in 0.015767 seconds 
+  Import took 0.017810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Meshes/RoadMeshes/road_bridge.fbx
+  artifactKey: Guid(cf873ed1bdfea1b40bf905c47d9291a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_bridge.fbx using Guid(cf873ed1bdfea1b40bf905c47d9291a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63cf14c9921289144aa2ab89c0b35e6b') in 0.015306 seconds 
+  Import took 0.017453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Meshes/RoadMeshes/road_roundabout.fbx
+  artifactKey: Guid(76b1585ad4abd1449ae4d6b2a245fb15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_roundabout.fbx using Guid(76b1585ad4abd1449ae4d6b2a245fb15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ae876db04cdf148adbd37b6771283d2') in 0.013637 seconds 
+  Import took 0.015644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Meshes/RoadMeshes/road_slantFlatCurve.fbx
+  artifactKey: Guid(8eba74366afd2274782a0ac809d8c652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_slantFlatCurve.fbx using Guid(8eba74366afd2274782a0ac809d8c652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd12449c59dcf410a9b647e80bd3f4c8') in 0.019013 seconds 
+  Import took 0.021268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Meshes/RoadMeshes/road_curvePavement.fbx
+  artifactKey: Guid(80bae3b1cf7f9b64db9319604557b945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_curvePavement.fbx using Guid(80bae3b1cf7f9b64db9319604557b945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17cf1ab2ad7058db1fa38364947c7d6d') in 0.014348 seconds 
+  Import took 0.016298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Meshes/RoadMeshes/road_drivewaySingle.fbx
+  artifactKey: Guid(e91dd937b8badb24dab7749fa812c8bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_drivewaySingle.fbx using Guid(e91dd937b8badb24dab7749fa812c8bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc3bebea66e50284c14db846d3ba5ffe') in 0.018548 seconds 
+  Import took 0.020525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Meshes/RoadMeshes/road_slantCurve.fbx
+  artifactKey: Guid(9a9939d8be5960b4bb4120b5403c9c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_slantCurve.fbx using Guid(9a9939d8be5960b4bb4120b5403c9c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fca89a93ca603afd4b6a03ad5e39eac') in 0.016309 seconds 
+  Import took 0.018546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Meshes/RoadMeshes/road_intersectionLine.fbx
+  artifactKey: Guid(9a5783044ff01ea48896fc0031b25cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_intersectionLine.fbx using Guid(9a5783044ff01ea48896fc0031b25cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c2238335ea0d902b92821ed7b1223ed') in 0.017370 seconds 
+  Import took 0.019404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Meshes/RoadMeshes/road_straightBarrierEnd.fbx
+  artifactKey: Guid(9d571e1c6a262124b80b95adba949347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_straightBarrierEnd.fbx using Guid(9d571e1c6a262124b80b95adba949347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0248f524b03f26798d93ed239b5bfec0') in 0.013178 seconds 
+  Import took 0.015237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Meshes/RoadMeshes/road_side.fbx
+  artifactKey: Guid(2158d0cae4f0aab448beab217400528a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_side.fbx using Guid(2158d0cae4f0aab448beab217400528a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e4e32f5353310425191a364a58f96a5') in 0.014721 seconds 
+  Import took 0.016837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Meshes/RoadMeshes/road_end.fbx
+  artifactKey: Guid(6e50b35d0191f8d42b41f87394da5e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_end.fbx using Guid(6e50b35d0191f8d42b41f87394da5e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38738cc0007cf7ea1ef2bc675ba1e7e2') in 0.015818 seconds 
+  Import took 0.017827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Meshes/RoadMeshes/road_slantHighBarrier.fbx
+  artifactKey: Guid(8ae97835ee7caa3448bbf0468afd5e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_slantHighBarrier.fbx using Guid(8ae97835ee7caa3448bbf0468afd5e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '160b4e0083f524772fe2f9142640e0e1') in 0.012156 seconds 
+  Import took 0.014196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Meshes/RoadMeshes/road_squareBarrier.fbx
+  artifactKey: Guid(e49e558811e030648a3546418b526a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_squareBarrier.fbx using Guid(e49e558811e030648a3546418b526a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6ecfc4105f1c2fc60019f83c7101264') in 0.013068 seconds 
+  Import took 0.015056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Meshes/RoadMeshes/road_sideEntryBarrier.fbx
+  artifactKey: Guid(a71e23f0cd884c2469e862ab2c3407a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_sideEntryBarrier.fbx using Guid(a71e23f0cd884c2469e862ab2c3407a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c171e76ee3b2ea543e062ffa1af6df3') in 0.015942 seconds 
+  Import took 0.017893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Meshes/RoadMeshes/road_intersectionBarrier.fbx
+  artifactKey: Guid(ad408ece8228a2849a1626a2f4bb36a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_intersectionBarrier.fbx using Guid(ad408ece8228a2849a1626a2f4bb36a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '437f633ae04e19c942c0d3fe9a86245f') in 0.013136 seconds 
+  Import took 0.014922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Meshes/RoadMeshes/road_drivewayDouble.fbx
+  artifactKey: Guid(baec2c294550e76439422b2d809bfa6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_drivewayDouble.fbx using Guid(baec2c294550e76439422b2d809bfa6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9d665a34b7b8cb0f6e05e691054063') in 0.015701 seconds 
+  Import took 0.017733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Meshes/RoadMeshes/road_square.fbx
+  artifactKey: Guid(2e35ad5bc810b8d4fb08be463182bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_square.fbx using Guid(2e35ad5bc810b8d4fb08be463182bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ceba95598d33a799511dd3ec7607e84') in 0.014332 seconds 
+  Import took 0.016442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Meshes/RoadMeshes/road_bendSquareBarrier.fbx
+  artifactKey: Guid(c543bc0002104fa4e8583c1a3bc58131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_bendSquareBarrier.fbx using Guid(c543bc0002104fa4e8583c1a3bc58131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e989bfab5762b8d54d388128c1a0790') in 0.013476 seconds 
+  Import took 0.015716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Meshes/RoadMeshes/road_bendSquare.fbx
+  artifactKey: Guid(30649abefa1161047b18d5bb76b9dbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_bendSquare.fbx using Guid(30649abefa1161047b18d5bb76b9dbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67bfa0849b47af71a647940ef166a893') in 0.015398 seconds 
+  Import took 0.017283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Meshes/RoadMeshes/road_drivewaySingleBarrier.fbx
+  artifactKey: Guid(ad7e41bffe4022241ab5886cb804bf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_drivewaySingleBarrier.fbx using Guid(ad7e41bffe4022241ab5886cb804bf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3889fd52e7039d6d3ad2d81df84ac8') in 0.012961 seconds 
+  Import took 0.015057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Meshes/RoadMeshes/road_crossroadPath.fbx
+  artifactKey: Guid(d1dfa2013c3351843ae3c0724f7f135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_crossroadPath.fbx using Guid(d1dfa2013c3351843ae3c0724f7f135a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae31cb3e3435c0f4ccdcd5cdf5d04b2') in 0.013420 seconds 
+  Import took 0.015405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Meshes/RoadMeshes/road_sideEntry.fbx
+  artifactKey: Guid(3461fa7e5c5d6d74e9479f036239a50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_sideEntry.fbx using Guid(3461fa7e5c5d6d74e9479f036239a50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e07204a9ce75fda87204b511d80f802d') in 0.020547 seconds 
+  Import took 0.022550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Meshes/RoadMeshes/road_curveIntersection.fbx
+  artifactKey: Guid(34bcae8e63fa00349965b79019bff0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_curveIntersection.fbx using Guid(34bcae8e63fa00349965b79019bff0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87977ce71a5a5b60602a2d6396615f70') in 0.018627 seconds 
+  Import took 0.021023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Meshes/RoadMeshes/road_splitBarrier.fbx
+  artifactKey: Guid(0f7dfb485091f1548a78479291d2a3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_splitBarrier.fbx using Guid(0f7dfb485091f1548a78479291d2a3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b0a4b45f77a5e3ec3454dcbb5d0f518') in 0.016821 seconds 
+  Import took 0.019155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Meshes/RoadMeshes/road_slantHigh.fbx
+  artifactKey: Guid(b7c16803afb621e449ca4a7ccf2b720e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_slantHigh.fbx using Guid(b7c16803afb621e449ca4a7ccf2b720e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac5cd2c1e60725bc08028ebf4b3e6572') in 0.015394 seconds 
+  Import took 0.017788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Meshes/RoadMeshes/road_sideExit.fbx
+  artifactKey: Guid(532ae222997f76f44a171415d0aeb26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_sideExit.fbx using Guid(532ae222997f76f44a171415d0aeb26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b513e6eaa443eff78c77237c7d3153') in 0.019856 seconds 
+  Import took 0.022101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Meshes/RoadMeshes/road_slantCurveBarrier.fbx
+  artifactKey: Guid(39c6071838a27de46ba3c3dbc4dd8b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_slantCurveBarrier.fbx using Guid(39c6071838a27de46ba3c3dbc4dd8b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7991ee25a272d6834821af569f84ac0a') in 0.012837 seconds 
+  Import took 0.015315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Meshes/RoadMeshes/road_curveBarrier.fbx
+  artifactKey: Guid(128e65bdcd03d284c8e8eb7640507c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_curveBarrier.fbx using Guid(128e65bdcd03d284c8e8eb7640507c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c2357c2c600736aad7c57f75509ffa3') in 0.011613 seconds 
+  Import took 0.013436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Meshes/RoadMeshes/road_curveIntersectionBarrier.fbx
+  artifactKey: Guid(9ec80b5084cbf0d42ad43d9cefa75508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_curveIntersectionBarrier.fbx using Guid(9ec80b5084cbf0d42ad43d9cefa75508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce0c856591bf9210acb914987fd7aa6b') in 0.015693 seconds 
+  Import took 0.017727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Meshes/RoadMeshes/road_crossing.fbx
+  artifactKey: Guid(0149352e03ce99c4f82edd9659d1b1be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_crossing.fbx using Guid(0149352e03ce99c4f82edd9659d1b1be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a6fdd3e9bb9413c8a50550c34854d6') in 0.014585 seconds 
+  Import took 0.016763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Meshes/RoadMeshes/road_slantBarrier.fbx
+  artifactKey: Guid(6551d851e119ea3459eb282982406065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_slantBarrier.fbx using Guid(6551d851e119ea3459eb282982406065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08120882f4a662cd1f93d0ad226b7c1') in 0.013185 seconds 
+  Import took 0.015191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Meshes/RoadMeshes/road_crossroadLine.fbx
+  artifactKey: Guid(bfe1dd7b23d42cf47abbefce6136f979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_crossroadLine.fbx using Guid(bfe1dd7b23d42cf47abbefce6136f979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57241b7d18dfd2796e78702bdacfbe4') in 0.015670 seconds 
+  Import took 0.017618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Meshes/RoadMeshes/road_endBarrier.fbx
+  artifactKey: Guid(5c0574d689cf55741b52cdfe06bc4087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_endBarrier.fbx using Guid(5c0574d689cf55741b52cdfe06bc4087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c0313482208ff44b67f5095078a6168') in 0.012988 seconds 
+  Import took 0.015057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Meshes/RoadMeshes/road_split.fbx
+  artifactKey: Guid(697c72dd3f4e1d2488869cec806b9c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_split.fbx using Guid(697c72dd3f4e1d2488869cec806b9c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '112b0ab2470dd0ddd121a7eacd3a7eae') in 0.012944 seconds 
+  Import took 0.014875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Meshes/RoadMeshes/road_roundaboutBarrier.fbx
+  artifactKey: Guid(1efe6edfa60d97c49a94503c73db5979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_roundaboutBarrier.fbx using Guid(1efe6edfa60d97c49a94503c73db5979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '559518485327c5f35501ddcb5f0d9d2e') in 0.012108 seconds 
+  Import took 0.014427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Meshes/RoadMeshes/road_intersection.fbx
+  artifactKey: Guid(3f8219fb5dbe0354294ad156cd0ae89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_intersection.fbx using Guid(3f8219fb5dbe0354294ad156cd0ae89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b04cd7be06baf2707c939360ce5f9b0d') in 0.013175 seconds 
+  Import took 0.015157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Meshes/RoadMeshes/road_sideBarrier.fbx
+  artifactKey: Guid(967a08a995897bf40a08cf8968b56100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_sideBarrier.fbx using Guid(967a08a995897bf40a08cf8968b56100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd779415ac0ceaf17590f6b01f5ae7725') in 0.012807 seconds 
+  Import took 0.015230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Meshes/RoadMeshes/road_slant.fbx
+  artifactKey: Guid(3b54d0e917ef0ae43aaa84fb46f60c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_slant.fbx using Guid(3b54d0e917ef0ae43aaa84fb46f60c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b582f5c52ce6eda201991feb2c7c743') in 0.012730 seconds 
+  Import took 0.014971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Meshes/RoadMeshes/road_slantFlat.fbx
+  artifactKey: Guid(2593e288e886f8348b20167aecd438c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_slantFlat.fbx using Guid(2593e288e886f8348b20167aecd438c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6789d57476e566d9df16e90189f83b85') in 0.013199 seconds 
+  Import took 0.015632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Meshes/RoadMeshes/road_slantFlatHigh.fbx
+  artifactKey: Guid(d246bf78550eab14cbc62da60479b103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_slantFlatHigh.fbx using Guid(d246bf78550eab14cbc62da60479b103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4bbdb7b46ef62181e371ad8dd9bf966') in 0.013102 seconds 
+  Import took 0.015060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Meshes/RoadMeshes/road_bendBarrier.fbx
+  artifactKey: Guid(5aed50b42f8d22a4daf7f9cf5b48b8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_bendBarrier.fbx using Guid(5aed50b42f8d22a4daf7f9cf5b48b8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b55eeccca38258066cd4e2549a9d3677') in 0.010371 seconds 
+  Import took 0.012269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Meshes/RoadMeshes/road_straightBarrier.fbx
+  artifactKey: Guid(300d53fc1ee30e94399c736b16ad6ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_straightBarrier.fbx using Guid(300d53fc1ee30e94399c736b16ad6ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a13e6fc45a17b387e7a08428e60ed060') in 0.011744 seconds 
+  Import took 0.013918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Meshes/RoadMeshes/road_crossroadBarrier.fbx
+  artifactKey: Guid(2c74eab3518311740bd794c856cff935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_crossroadBarrier.fbx using Guid(2c74eab3518311740bd794c856cff935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71368be9367863ad35e2b1cdcf3094f5') in 0.011538 seconds 
+  Import took 0.013430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Meshes/RoadMeshes/road_intersectionPath.fbx
+  artifactKey: Guid(a30c81a5328ee5a4daf977ad54936878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_intersectionPath.fbx using Guid(a30c81a5328ee5a4daf977ad54936878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5fd95a08d45920e103a9d68af345419') in 0.012585 seconds 
+  Import took 0.014572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Meshes/RoadMeshes/road_straight.fbx
+  artifactKey: Guid(5f4497eacb96e3e47be997287bb063f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_straight.fbx using Guid(5f4497eacb96e3e47be997287bb063f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e795cfcc9583bac7a0e8563665e0934c') in 0.012473 seconds 
+  Import took 0.014420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Meshes/RoadMeshes/road_sideExitBarrier.fbx
+  artifactKey: Guid(79d6b1c33ca2a164db2aa7d47030db76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_sideExitBarrier.fbx using Guid(79d6b1c33ca2a164db2aa7d47030db76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ece9c40d7ed616420fa787035f49b94') in 0.011587 seconds 
+  Import took 0.013779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Meshes/RoadMeshes/road_bendSidewalk.fbx
+  artifactKey: Guid(2dd24b12dd7b10a4e8ff909363443c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_bendSidewalk.fbx using Guid(2dd24b12dd7b10a4e8ff909363443c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc94986d4b855be7054b5df606f4cfea') in 0.012075 seconds 
+  Import took 0.014459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Meshes/RoadMeshes/road_curve.fbx
+  artifactKey: Guid(4deda4db9052fac42b4b81f30b60b170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_curve.fbx using Guid(4deda4db9052fac42b4b81f30b60b170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf7e2b9d278e9e9323bb8e9be0e259d3') in 0.012596 seconds 
+  Import took 0.014686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Meshes/RoadMeshes/road_drivewayDoubleBarrier.fbx
+  artifactKey: Guid(f78a01a5038093d44b75cd04e402328b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/RoadMeshes/road_drivewayDoubleBarrier.fbx using Guid(f78a01a5038093d44b75cd04e402328b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c9b897dba9dbbeb376d2fe30e72074') in 0.011408 seconds 
+  Import took 0.013649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.735547 seconds.
   path: Assets
   artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.004772 seconds 
-  Import took 0.006702 seconds .
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.003038 seconds 
+  Import took 0.005193 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 5.491361 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(e774490c273d13344814344787f62154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(e774490c273d13344814344787f62154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2323285857ada303d0e324d1a67e09a0') in 0.003354 seconds 
+  Import took 0.005370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.446862 seconds.
+  path: Assets/Scripts/NewBehaviourScript.cs
+  artifactKey: Guid(f351ef58fb3e5dd4b81eb1b7f00f2934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NewBehaviourScript.cs using Guid(f351ef58fb3e5dd4b81eb1b7f00f2934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e4b92f850f6d1d5d6feb26685cb35ff') in 0.006120 seconds 
+  Import took 0.008502 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008087 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.745 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1388 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.2 MB.
+System memory in use after: 68.3 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1873.
+Total: 1.677300 ms (FindLiveObjects: 0.190000 ms CreateObjectMapping: 0.086700 ms MarkObjects: 1.383500 ms  DeleteObjects: 0.016200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007805 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.792 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1428 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.4 MB.
+System memory in use after: 69.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1919.
+Total: 1.638300 ms (FindLiveObjects: 0.164900 ms CreateObjectMapping: 0.033300 ms MarkObjects: 1.425700 ms  DeleteObjects: 0.013400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 269.699942 seconds.
+  path: Assets/NewBehaviourScript.cs
+  artifactKey: Guid(680cbf1ab84e33c4a82f6a58a2e2d575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewBehaviourScript.cs using Guid(680cbf1ab84e33c4a82f6a58a2e2d575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41634951c78f2ae3da20bcc1cb09aeed') in 0.005472 seconds 
+  Import took 0.007891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002201 seconds.
+  path: Assets/NewBehaviourScript.cs
+  artifactKey: Guid(680cbf1ab84e33c4a82f6a58a2e2d575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewBehaviourScript.cs using Guid(680cbf1ab84e33c4a82f6a58a2e2d575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41634951c78f2ae3da20bcc1cb09aeed') in 0.002952 seconds 
+  Import took 0.005175 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007029 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.747 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1429 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.5 MB.
+System memory in use after: 69.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1922.
+Total: 1.648100 ms (FindLiveObjects: 0.153000 ms CreateObjectMapping: 0.038200 ms MarkObjects: 1.443000 ms  DeleteObjects: 0.012900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007245 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.751 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1428 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.5 MB.
+System memory in use after: 69.6 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1923.
+Total: 1.612200 ms (FindLiveObjects: 0.144400 ms CreateObjectMapping: 0.032200 ms MarkObjects: 1.417900 ms  DeleteObjects: 0.016600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 27.093090 seconds.
+  path: Assets/Scripts/Backup.cs
+  artifactKey: Guid(82f1b906b4fb3c744a844a94d9fe3c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Backup.cs using Guid(82f1b906b4fb3c744a844a94d9fe3c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c02e974afbed5c8be8b464a9b8ebf09') in 0.005406 seconds 
+  Import took 0.007668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.059049 seconds.
+  path: Assets/Scripts/Backup.cs
+  artifactKey: Guid(82f1b906b4fb3c744a844a94d9fe3c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Backup.cs using Guid(82f1b906b4fb3c744a844a94d9fe3c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c02e974afbed5c8be8b464a9b8ebf09') in 0.002763 seconds 
+  Import took 0.005020 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007220 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.753 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1429 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.5 MB.
+System memory in use after: 69.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1926.
+Total: 1.682000 ms (FindLiveObjects: 0.157700 ms CreateObjectMapping: 0.032400 ms MarkObjects: 1.475500 ms  DeleteObjects: 0.015200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 41.968614 seconds.
+  path: Assets/Scripts/SaveMap.cs
+  artifactKey: Guid(82f1b906b4fb3c744a844a94d9fe3c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SaveMap.cs using Guid(82f1b906b4fb3c744a844a94d9fe3c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1aa6032cb28f8a639dabd7e1e7a728b') in 0.006019 seconds 
+  Import took 0.008539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001885 seconds.
+  path: Assets/Scripts/SaveMap.cs
+  artifactKey: Guid(82f1b906b4fb3c744a844a94d9fe3c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SaveMap.cs using Guid(82f1b906b4fb3c744a844a94d9fe3c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1aa6032cb28f8a639dabd7e1e7a728b') in 0.003058 seconds 
+  Import took 0.005771 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006938 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.761 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1429 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.5 MB.
+System memory in use after: 69.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1928.
+Total: 1.810800 ms (FindLiveObjects: 0.196300 ms CreateObjectMapping: 0.036600 ms MarkObjects: 1.558000 ms  DeleteObjects: 0.018100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
